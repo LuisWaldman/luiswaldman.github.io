@@ -1,0 +1,71 @@
+﻿#miApp {
+    margin: 15px;
+}
+
+
+.clase {
+    display: block;
+    color: red;
+}
+.cssPoema {
+    display: flex;
+    flex-direction: column;
+}
+.cssVerso {
+    display: flex;
+    flex-direction: row;
+}
+
+.totalsilabas {
+    width: 150px;
+}
+
+
+.totalsilabasrima
+ {
+    position: absolute;
+    right:  0px;
+    margin-right: 20px;
+}
+.clsRimas {
+    display: flex;
+    flex-direction: row;
+}
+
+.clsRima {
+    display: block;
+    width: 80px;
+    border: 1px solid;
+    padding: 5px;
+
+}
+
+
+.clsPanel {
+    display: flex;
+    flex-direction: row;
+}
+
+.btnPanel {
+    display: block;
+    width: 80px;
+    border: 1px solid;
+    padding: 5px;
+}
+
+#divPoema {
+    width: 100%;
+    height: 300px;
+
+}
+
+.pVerso {
+    margin: 0px !important;
+}
+
+.spanSilaba {
+    margin: 0px !important;
+    padding: 0px !important;
+    background-color: rgb(222, 32, 23);
+
+}

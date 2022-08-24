@@ -1,0 +1,61 @@
+<style>
+    .editor {
+        border: 1px solid;
+        height: 600px;
+        display: flex;
+
+    }
+</style>
+
+<html>
+    <head></head>
+    <body>
+        <div class="editor" id="editor"s>
+            
+            <div class="versoEscribiendo">
+                <div id="anterior">ante texto </div>
+                <div id="cursor"></div>
+                <div id="posterior"> texto de poste</div>
+            </div>
+            
+        </div>
+    </body>
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="js/jquery.js"></script>
+<script>
+
+$(function() 
+
+{$("#editor").keydown(function() {
+  alert( "Handler for .keydown() called." );
+});
+
+});
+
+    const verso1 = document.querySelector('#verso1');
+    
+
+    verso1.addEventListener('input', updateValue);
+
+function updateValue(e) 
+{
+    document.getSelection().anchorOffset = 5;
+    /*
+    const el = document.getElementById('verso1');
+const selection = window.getSelection();
+const range = document.createRange();
+
+
+
+
+selection.removeAllRanges();
+range.selectNodeContents(el);
+range.collapse(false);
+selection.addRange(range);
+el.focus();
+*/
+    
+}
+</script>
